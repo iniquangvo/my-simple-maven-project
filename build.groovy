@@ -4,10 +4,10 @@ def build() {
         sh "echo ${wsdir}"
     }
     stage('Build') {
-        sh "echo Build"
+        sh "mvn clean verify"
     }
     stage('Test') {
-        sh "echo Test"
+        sh "mvn clean package"
     }
 }
 
