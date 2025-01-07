@@ -1,8 +1,8 @@
 def build() {
     wsdir = pwd()
-    stage('Preparation' {
+    stage('Preparation') {
         sh "echo ${wsdir}"
-    })
+    }
     stage('Build') {
         sh "echo Build"
     }
