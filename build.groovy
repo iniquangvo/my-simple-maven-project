@@ -2,13 +2,12 @@ def build() {
     wsdir = pwd()
     stage('Preparation') {
         sh "echo ${wsdir}"
-        sh "printenv"
     }
     stage('Build') {
-        // sh "mvn clean verify"
+        sh "mvn clean verify"
     }
     stage('Test') {
-        // sh "mvn clean package"
+        sh "mvn clean package"
     }
 }
 
